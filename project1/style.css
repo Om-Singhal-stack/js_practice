@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#back{
+      padding: 2%;
+      text-align: center;
+      border: 2px solid black;  
+}
+#back a{
+    color: rgb(140, 140, 217);
+    text-decoration: none;
+}
+#text{
+    padding: 2%;
+    text-align: center;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20%;
+}
+.color_picker{
+    min-width: 100px; 
+    min-height: 100px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+ 
+}
+.color_picker:nth-child(1){
+    background-color: red;
+}
+.color_picker:nth-child(2){
+    background-color: green;
+}
+.color_picker:nth-child(3){
+    background-color: fuchsia;
+}
+.color_picker:nth-child(4){
+    background-color: tan;
+}
+.color_picker:nth-child(5){
+    background-color: yellow;
+}
