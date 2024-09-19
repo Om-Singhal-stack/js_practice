@@ -1,13 +1,11 @@
 const sub = document.querySelector(`#sub`);
 const re = document.querySelector(`#res`);
-function textc(obj,txt){
-    // const textadd = document.createTextNode(txt);
-    // obj.appendChild(textadd);
-    
+function textc(obj, txt) {
+
     obj.innerText = `Your BMI: ${txt}`;
-    
+
 }
-sub.addEventListener("click",(e)=>{
+sub.addEventListener("click", (e) => {
     e.preventDefault();
 
     console.log("1");
@@ -16,15 +14,15 @@ sub.addEventListener("click",(e)=>{
     const out = document.querySelector(`#out_print>h4`);
     const inp1 = boinp.value;
     const inp2 = heinp.value;
-  
-    if(inp1<=0 || inp2<=0 ||inp1==='' || inp2==='' || isNaN(inp1) || isNaN(inp2)){
-        textc(out,`pls fill both the input's`);
+
+    if (inp1 <= 0 || inp2 <= 0 || inp1 === '' || inp2 === '' || isNaN(inp1) || isNaN(inp2)) {
+        textc(out, `pls fill both the input's`);
     }
-    else{
-         textc(out,`${inp1/(inp2*inp2)}`);
+    else {
+        textc(out, `${inp1 / (inp2 * inp2)}`);
     }
 })
-re.addEventListener("click",()=>{
+re.addEventListener("click", () => {
     location.reload();
 })
 
